@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap');
+
+body {
+    font-family: "Arapey", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 218, 209);
+}
+
+.welcome-body {
+    color: rgb(165, 152, 87);
+    background-color: rgb(68, 84, 68);
+    
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #67756a;
+    border-bottom: 5px solid #67756a;
+    border-radius: 10 px;
+}
+
+.welcome-subheader h1 {
+    font-family: "Arapey", sans-serif;
+    font-weight: bold;
+    color: rgb(165, 152, 87);
+}
+
+.welcome-subheader p {
+    font-family: "WindSong", sans-serif;
+
+}
+.welcome-section {
+  display: flex;
+  justify-content: space-between; /* pushes items to left and right edges */
+  align-items: center;           
+  max-width: 900px;              /* optional: limits section width */
+  margin: 50px auto;             /* center the section horizontally */
+  padding: 20px;
+}
+.auth-links {
+  display: flex;
+  flex-direction: column; /* stack links vertically */
+  gap: 20px;              /* space between links */
+}
+.auth-links a {
+  display: inline-block;
+  background-color: rgb(68, 84, 68); /* green buttons */
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.auth-links a:hover {
+  background-color: rgb(165, 152, 87);
+}
+
+.wlc-image img {
+  border-radius: 10px;
+  max-width: 200%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .welcome-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .auth-links {
+    margin-bottom: 20px;
+  }
+}
+
+
+.signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(68, 84, 68);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 50%;
+  background-color: #bbc7b0;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  color: rgb(68, 84, 68);
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #606c5b;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome <%= user.username %></title>
+</head>
+<body>
+  <h1>Welcome, <%= user.username %>! 🎉</h1>
+
+  <!-- Search + Filters Form -->
+  <form method="GET" action="/users/<%= user._id %>/recipes">
+    <input type="text" name="search" placeholder="Search recipes..." value="<%= search || '' %>">
+
+    <select name="category">
+      <option value="">All Categories</option>
+      <option value="Appetizer">Appetizer</option>
+      <option value="Soup">Soup</option>
+      <option value="Salad">Salad</option>
+      <option value="Entree">Entree</option>
+      <option value="Dessert">Dessert</option>
+    </select>
+
+    <select name="mealType">
+      <option value="">All Meal Types</option>
+      <option value="Breakfast">Breakfast</option>
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
+
+    <button type="submit">Filter</button>
+  </form>
+
+  <!-- Recipe Results -->
+  <section>
+    <% if (recipes.length === 0) { %>
+      <p>No recipes found. Try different filters!</p>
+    <% } else { %>
+      <ul>
+        <% recipes.forEach(recipe => { %>
+          <li>
+            <a href="/users/<%= user._id %>/recipes/<%= recipe._id %>">
+              <strong><%= recipe.name %></strong>
+            </a>
+            - <%= recipe.category %> | <%= recipe.mealType %>
+          </li>
+        <% }) %>
+      </ul>
+    <% } %>
+  </section>
+</body>
+</html>
