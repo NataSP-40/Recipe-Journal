@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/show.css" />
     <title>Recipes</title>
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1> - list recipes by categ and type</h1>
-    <a href="/users/<%=user._id%>/recipes/new">Add new recipe</a>
-    <ul>
+   <div class="all-recipes-body">
+        <div class="all-recipes-header">
+            <h1>All Recipes</h1>
+            <a class="add-recipes-link" href="/users/<%=user._id%>/recipes/new">Add new recipe</a>
+        </div>
+        <ul>
         <% recipes.forEach((recipe)=>{ %>
             <a href="/users/<%= user._id %>/recipes/<%= recipe._id %>">
                 <li><%= recipe.name %></li>
             </a>
         <% }) %>
-    </ul>
+        </ul>
+   </div>
+
+
 </body>
 </html>

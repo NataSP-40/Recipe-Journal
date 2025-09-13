@@ -9,8 +9,6 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Edit <% recipe.name %></h1>
-    <p>Link to all Recipes</p>
-    <p>Search (loop) for Recipe by Category and MealType</p>
 
     <form action="/users/<%= user._id %>/recipes/<%= recipe._id %>?_method=PUT" method="POST">
         <label for="name">Name:</label>
@@ -18,18 +16,18 @@
 
         <label for="category">Category:</label>
         <select id="category" name="category">
-            <option value="appetizer"<%= recipe.category === "appetizer" ? "selected" : "" %>>Appetizer</option>
-            <option value="soup"<%= recipe.category === "soup" ? "selected" : "" %>>Soup</option>
-            <option value="salad"<%= recipe.category === "salad" ? "selected" : "" %>>Salad</option>
-            <option value="entree"<%= recipe.category === "entree" ? "selected" : "" %>>Entree</option>
-            <option value="dessert"<%= recipe.category === "dessert" ? "selected" : "" %>>Dessert</option>
+            <option value="Appetizer"<%= recipe.category === "Appetizer" ? "selected" : "" %>>Appetizer</option>
+            <option value="Soup"<%= recipe.category === "Soup" ? "selected" : "" %>>Soup</option>
+            <option value="Salad"<%= recipe.category === "Salad" ? "selected" : "" %>>Salad</option>
+            <option value="Entree"<%= recipe.category === "Entree" ? "selected" : "" %>>Entree</option>
+            <option value="Dessert"<%= recipe.category === "Dessert" ? "selected" : "" %>>Dessert</option>
         </select>
 
         <label for="mealType">Meal Type:</label>
         <select id="mealType" name="mealType">
-            <option value="breakfast"<%= recipe.mealType === "breakfast" ? "selected" : "" %>>Breakfast</option>
-            <option value="lunch"<%= recipe.mealType === "lunch" ? "selected" : "" %>>Lunch</option>
-            <option value="dinner"<%= recipe.mealType === "dinner" ? "selected" : "" %>>Dinner</option>
+            <option value="Breakfast"<%= recipe.mealType === "Breakfast" ? "selected" : "" %>>Breakfast</option>
+            <option value="Lunch"<%= recipe.mealType === "Lunch" ? "selected" : "" %>>Lunch</option>
+            <option value="Dinner"<%= recipe.mealType === "Dinner" ? "selected" : "" %>>Dinner</option>
         </select>
 
         <label for="ingredients">Ingredients:</label>

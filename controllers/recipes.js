@@ -3,38 +3,6 @@ const router = express.Router();
 
 const User = require("../models/user.js");
 
-//WELCOME after sign in to hold my search
-// router.get("/", async (req, res) => {
-//   try {
-//     const currentUser = await User.findById(req.session.user._id);
-//     res.render("recipes/welcome.ejs");
-
-//     // // Optional: Apply filters from query params
-//     if (req.query.search) {
-//       const search = req.query.search.toLowerCase();
-//       recipes = recipes.filter(r =>
-//         r.name.toLowerCase().includes(search) ||
-//         r.ingredients.toLowerCase().includes(search)
-//       );
-//     }
-
-//     if (req.query.category) {
-//       recipes = recipes.filter(r => r.category === req.query.category);
-//     }
-
-//     if (req.query.mealType) {
-//       recipes = recipes.filter(r => r.mealType === req.query.mealType);
-//     }
-
-//     res.render("welcome.ejs", { 
-//         user: currentUser, recipes });
-//   } catch (error) {
-//     console.log(error);
-//     res.redirect("/");
-//   }
-// });
-
-
 //INDEX
 router.get("/", async (req, res) => {
     try {

@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const recipeSchema = new mongoose.Schema({
   name: { type: String, required: true, },
-  category: { type: String, enum: ["appetizer", "soup", "salad", "entree", "dessert"]},
-  mealType: { type: String, enum: ["breakfast", "lunch", "dinner"]},
+  category: { type: String, enum: ["Appetizer", "Soup", "Salad", "Entree", "Dessert"]},
+  mealType: { type: String, enum: ["Breakfast", "Lunch", "Dinner"]},
   ingredients: { type: String, required: true},
   instructions: { type: String},
   image: { type: String},

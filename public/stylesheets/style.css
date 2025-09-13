@@ -76,7 +76,6 @@ body {
   }
 }
 
-
 .signin-container,
 .signup-container {
   display: flex;
@@ -118,4 +117,59 @@ button {
   border: none;
   margin: 15px 0;
   font-size: 1.1em;
+}
+
+.all-recipes-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-recipes-header {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+}
+
+.add-recipes-link {
+    padding: 10px;
+    background-color: rgb(68, 84, 68);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5em;
+    padding: 2px 25px;
+    text-decoration: none;
+}
+
+.add-recipes-link:hover {
+    background-color: rgb(165, 152, 87);
+}
+ul {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+ul > a {
+    text-decoration: none;
+    color: rgb(68, 84, 68);
+    width: 40%;
+    background-color: #e9dcdc;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul > a:hover {
+  background-color: rgb(165, 152, 87);
+  color: white;
 }

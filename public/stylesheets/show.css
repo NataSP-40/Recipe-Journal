@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(209, 218, 209);
+}
+
+.show-body {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+/* .show-header {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+} */
+
+.show-body > h1 {
+    display: flex;
+    justify-content:center;
+    color: rgb(68, 84, 68);
+    font-size: 3.4em;
+    margin-left: 10px;
+}
+.show-sidebar {
+    display: flex;
+    flex-direction:column-reverse;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.show-actions {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 30px;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: rgb(68, 84, 68);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    width: 10em;
+    margin: 5px;
+}
+button:hover {
+    background-color: rgb(165, 152, 87);
+    color: white;
+}
+.show-links > a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(68, 84, 68);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 0;
+    border-radius: 30px;
+    width: 10em;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.show-actions > a:hover {
+    background-color: rgb(165, 152, 87);
+}
+.show-recipe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.show-ingredients-container {
+    width: 90%;
+    margin: 20px;
+    background-color: yellow;
+    padding: 8px 10px;
+}
+.show-ingredients-container h3 {
+    font-weight: bold;
+
+}
+.show-instructions-container {
+    width: 80%;
+    margin: 20px;
+
+}

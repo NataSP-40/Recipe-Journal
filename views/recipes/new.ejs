@@ -9,8 +9,6 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1>Add New Recipe</h1>
-    <p>Link to all Recipes</p>
-    <p>Search (loop) for Recipe by Category and MealType</p>
 
     <form action="/users/<%= user._id %>/recipes" method="POST">
         <label for="name">Name:</label>
@@ -18,18 +16,18 @@
 
         <label for="category">Category:</label>
         <select id="category" name="category">
-            <option value="appetizer">Appetizer</option>
-            <option value="soup">Soup</option>
-            <option value="salad">Salad</option>
-            <option value="entree">Entree</option>
-            <option value="dessert">Dessert</option>
+            <option value="Appetizer">Appetizer</option>
+            <option value="Soup">Soup</option>
+            <option value="Salad">Salad</option>
+            <option value="Entree">Entree</option>
+            <option value="Dessert">Dessert</option>
         </select>
 
         <label for="mealType">Meal Type:</label>
         <select id="mealType" name="mealType">
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
         </select>
 
         <label for="ingredients">Ingredients:</label>
