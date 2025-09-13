@@ -10,11 +10,14 @@
 <body>
     <%- include('../partials/_navbar.ejs') %>
    <div class="all-recipes-body">
+    
         <div class="all-recipes-header">
-            <h1>All Recipes</h1>
+            
             <a class="add-recipes-link" href="/users/<%=user._id%>/recipes/new">Add new recipe</a>
+            <!-- <img src="/Img/addimg.jpg" alt="blank journal with ingredients around" width="400"/> -->
         </div>
         <ul>
+        <h1>All Recipes</h1>    
         <% recipes.forEach((recipe)=>{ %>
             <a href="/users/<%= user._id %>/recipes/<%= recipe._id %>">
                 <li><%= recipe.name %></li>

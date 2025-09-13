@@ -12,8 +12,6 @@
     <div class="show-body">
         <h1><%= recipe.name %></h1>
         <div class="show-sidebar">
-                    <p><strong>Category:</strong> <%= recipe.category %></p>
-                    <p><strong>Meal Type:</strong> <%= recipe.mealType %></p>
                 <div class="show-actions">
                     <div class="show-image">
                         <% if (recipe.image) { %>
@@ -28,6 +26,9 @@
                         </form>       
                     </div>
                 </div>
+                <p><strong>Category:</strong> <%= recipe.category %></p>
+                <p><strong>Meal Type:</strong> <%= recipe.mealType %></p>
+
         </div>
         <div class="show-recipe">
             <div class="show-ingredients-container">
