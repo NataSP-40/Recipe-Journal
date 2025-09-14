@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(209, 218, 209);
+    /* align-items: center; */
 }
 
 .welcome-body {
@@ -124,9 +125,10 @@ button {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    background-image: url(/Img/addimg.jpg);
+    /* background-image: url(/Img/addimg.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 20px; */
     }
 
 
@@ -167,7 +169,7 @@ ul {
 ul > a {
     text-decoration: none;
     color: rgb(68, 84, 68);
-    width: 40%;
+    width: 60%;
     background-color: #95998f;
     border-radius: 30px;
     padding: 10px 20px;
@@ -239,7 +241,6 @@ a {
   height: auto;
 }
 
-/* iPhone 14 Pro Max Portrait (430px width) */
 @media (max-width: 430px) {
 
   body {
@@ -256,7 +257,7 @@ a {
   }
 
   .welcome-section {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     margin: 20px auto;
@@ -271,7 +272,7 @@ a {
   }
 
   .auth-links a {
-    width: 100%; /* full width tap targets */
+    width: 100%; 
     font-size: 1.2em;
     padding: 12px;
   }
@@ -302,7 +303,7 @@ a {
   }
 
   .all-recipes-body {
-    flex-direction: column; /* stack */
+    flex-direction: column;
     padding: 20px;
   }
 
@@ -341,4 +342,4 @@ a {
     font-size: 1em;
     padding: 12px;
   }
-}
+} 
