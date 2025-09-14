@@ -30,13 +30,13 @@ Recipe Journal is a full-stack web application that allows users to securely man
 
 | Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
-| GET | `/fruits` | Show all fruits | Yes |
-| GET | `/fruits/new` | New fruit form | Yes |
-| POST | `/fruits` | Create fruit | Yes |
-| GET | `/fruits/:id` | Show single fruit | Yes |
-| GET | `/fruits/:id/edit` | Edit fruit form | Yes |
-| PUT | `/fruits/:id` | Update fruit | Yes |
-| DELETE | `/fruits/:id` | Delete fruit | Yes |
+| GET | `/recipes` | Show all recipes | Yes |
+| GET | `/recipes/new` | New recipe form | Yes |
+| POST | `/recipes` | Create recipe | Yes |
+| GET | `/recipes/:id` | Show recipe | Yes |
+| GET | `/recipes/:id/edit` | Edit recipe form | Yes |
+| PUT | `/recipes/:id` | Update recipe | Yes |
+| DELETE | `/recipes/:id` | Delete recipe | Yes |
 
 ### Attributions
 * Express.js – Web framework
