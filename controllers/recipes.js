@@ -3,7 +3,6 @@ const router = express.Router();
 
 const User = require("../models/user.js");
 
-//INDEX
 router.get("/", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -17,12 +16,10 @@ router.get("/", async (req, res) => {
     };
 });
 
-//NEW
 router.get("/new", async (req, res) => {
     res.render("recipes/new.ejs");
 });
 
-//POST
 router.post("/", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -35,7 +32,6 @@ router.post("/", async (req, res) => {
     };
 });
 
-//SHOW
 router.get("/:recipeId", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -50,7 +46,6 @@ router.get("/:recipeId", async (req, res) => {
     };
 });
 
-//DELETE
 router.delete("/:recipeId", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -63,7 +58,6 @@ router.delete("/:recipeId", async (req, res) => {
     };
 });
 
-//EDIT
 router.get("/:recipeId/edit", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
@@ -77,7 +71,6 @@ router.get("/:recipeId/edit", async (req, res) => {
     };
 });
 
-//UPDATE
 router.put("/:recipeId", async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);

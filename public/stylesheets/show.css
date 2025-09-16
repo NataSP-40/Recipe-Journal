@@ -117,7 +117,7 @@ p {
 @media (max-width: 430px) {
 
   body {
-    font-size: 1em; /* slightly smaller base text */
+    font-size: 1em; 
     padding: 0 10px;
     width: 100%;
   }
@@ -130,35 +130,35 @@ p {
   }
 
   .show-body > h1 {
-    font-size: 2em; /* scale down big header */
+    font-size: 2em; 
     text-align: center;
     margin: 10px 0;
   }
 
   .show-sidebar {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column; 
     width: 100%;
   }
 
   .show-actions {
-    flex-direction: column; /* buttons stacked */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     margin: 15px 0;
   }
 
   button {
-    width: 100%; /* full width for tap targets */
+    width: 100%; 
     font-size: 1em;
   }
 
   .show-links > a {
-    width: 100%; /* full width links */
+    width: 100%; 
     font-size: 1em;
   }
 
   .show-recipe {
-    flex-direction: column; /* stack ingredients and instructions */
+    flex-direction: column; 
     width: 100%;
   }
 
@@ -172,7 +172,7 @@ p {
 
   .show-ingredients-container h3,
   .show-instructions-container h3 {
-    font-size: 1.6em; /* smaller headers for mobile */
+    font-size: 1.6em; 
     text-align: center;
     margin: 10px 0;
   }
