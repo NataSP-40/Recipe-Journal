@@ -5,6 +5,9 @@
 
 Recipe Journal is a full-stack web application that allows users to securely manage their personal collection of recipes. Users can sign up, log in, and then create, view, edit, or delete recipes. Each recipe includes details like category, meal type, speciality, ingredients, and instructions. Recipes can also display images to make them look more real and appetizing. App has responsive layout feature.
 
+### Live Demo
+[Deployed App Link](https://recipe-journal-ga-project-8462caeaa718.herokuapp.com/)
+
 ### User Stories
 #### 1. Welcome Page & Authentication
     As a user, I want a welcome page with a friendly greeting and options to sign in/sign up so I know where to start.
